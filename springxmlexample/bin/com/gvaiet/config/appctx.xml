@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd"> <!-- bean definitions here -->
+        
+    <bean class="com.gvaiet.beans.Student" id="student1" >
+    	<property name="rollNo" value="1" />
+    	<property name="name" value="ABC" />
+    	<property name="email" value="abc@bbc.com" />
+    </bean>
+    <bean class="com.gvaiet.beans.Student" id="student2" >
+    	<property name="rollNo" value="2" />
+    	<property name="name" value="ABC" />
+    	<property name="email" value="abc@bbc.com" />
+    </bean>
+    <bean class="com.gvaiet.beans.Student" id="student3" >
+    	<constructor-arg value="3" />
+    	<constructor-arg value="ABC" />
+    	<constructor-arg value="abc@bbc.com" />
+    </bean>
+    <bean class="com.gvaiet.beans.Student" id="student4" >
+    	<constructor-arg value="4" />
+    	<constructor-arg value="ABC" />
+    	<constructor-arg value="abc@bbc.com" />
+    </bean>
+
+</beans>
