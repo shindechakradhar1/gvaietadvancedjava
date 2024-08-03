@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd"> <!-- bean definitions here -->	
+	
+	<bean class="com.gvaiet.springdixmlconstructor.beans.Address" id="address1">
+		<constructor-arg value="Shelu" />
+		<constructor-arg value="410101" />
+	</bean>
+	
+	<bean class="com.gvaiet.springdixmlconstructor.beans.Student" id="student1">
+		<constructor-arg value="1" />
+		<constructor-arg value="ABC" />
+		<constructor-arg ref="address1" />
+	</bean>
+
+</beans>
