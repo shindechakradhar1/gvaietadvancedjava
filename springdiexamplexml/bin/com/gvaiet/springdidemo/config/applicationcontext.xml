@@ -13,7 +13,7 @@
         <bean class="com.gvaiet.springdidemo.beans.Student" id="student1">
         	<property name="rno" value="1"></property>
         	<property name="name" value="ABC"></property>
-        	<property name="adress" ref="address1"></property>
+        	<property name="adress" ref="address1"></property> 
         </bean>
         
 
